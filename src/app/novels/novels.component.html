@@ -1,0 +1,30 @@
+<div>
+    <div class="search">
+      <input type="text" placeholder="Search here..." name="search" id="input" [(ngModel)]="term" />
+    </div>
+    <ul>
+      <div class="novels">
+        <li *ngFor="let novel of novels | filter: term">
+          <div *ngIf="novel.genres ==filter || filter=='' ">
+            <div class="action">
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{ novel.title }}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="{{ novel.image }}" alt="Photo">
+                <mat-card-content>
+                  <p>
+                  {{ novel.synopsis }}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <a href="{{ novel.url }}"><button mat-button>View More</button></a>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </div>
+

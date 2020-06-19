@@ -1,0 +1,15 @@
+.foot{
+  
+    bottom: 0;
+    height: 40px;
+    color :whitesmoke;
+    background: #6bc5d2 ;
+    margin-top:480px;
+}
+
+.foot p{
+    float: right ;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+}

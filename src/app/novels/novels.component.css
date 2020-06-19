@@ -1,0 +1,52 @@
+li {
+    list-style: none;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  img {
+    height: 150px;
+    width: 293px;
+  }
+  
+  .action {
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+  }
+  
+  button {
+    height: 50px;
+    width: 280px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+  }
+  
+  .novels {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+  }
+  
+  .search {
+    margin-left: 1000px;
+    padding-top: 100px;
+    
+ }
+  
+  #input {
+    border: 2px solid white;
+    border-radius: 10rem;
+    font-size: 20px;
+    margin: 5px;
+  
+  }
+  
+  .example-card {
+    max-width: 400px;
+    border: outset black 0.3em;
+  }
