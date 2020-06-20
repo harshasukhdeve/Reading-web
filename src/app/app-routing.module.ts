@@ -3,8 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NovelsComponent } from './novels/novels.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import {AboutusComponent } from './aboutus/aboutus.component';
-import { NewsComponent } from './news/news.component';
-
+import { NewsheadlineComponent } from './newsheadline/newsheadline.component';
 
 const routes: Routes = [
   { path: '', component: NovelsComponent },
@@ -21,11 +20,11 @@ const routes: Routes = [
     path: 'aboutus',
     component: AboutusComponent,
   }, 
- 
   {
-    path: 'news',
-    component: NewsComponent,
-  }, 
+    path: 'newsheadline',
+    component: NewsheadlineComponent,
+  },
+   
 
 
 ];

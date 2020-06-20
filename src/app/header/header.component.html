@@ -4,7 +4,7 @@
       <p></p>
       <a href="#" routerLink="/"><button mat-button (click)="dataPass('')">Home</button></a>
       <div>
-        <button mat-button [matMenuTriggerFor]="menu">Categories</button>
+        <button mat-button [matMenuTriggerFor]="menu">Books Categories</button>
         <mat-menu #menu="matMenu">
           <button mat-menu-item routerLink="/novels" class="drop" (click)="dataPass('action')">Action Books</button>
           <button mat-menu-item routerLink="/novels" class="drop" (click)="dataPass('Realistic')">
@@ -16,12 +16,13 @@
            <button mat-menu-item routerLink="/novels" class="drop" (click)="dataPass('popular')">
             Story Books
           </button>
-          <button mat-menu-item routerLink="/news" class="drop" >
-            News
+          <button mat-menu-item routerLink="/novels" class="drop" (click)="dataPass('rating')">
+            Reader Choice 
           </button>
         </mat-menu>
       </div>
-      <a href="#" routerLink="/novels"><button mat-button (click)="dataPass('rating')">Reader choice</button></a>
+      <!-- <a href="#" routerLink="/novels"><button mat-button (click)="dataPass('rating')">Reader choice</button></a> -->
+      <a href="#" routerLink="/newsheadline"><button mat-button>New Head Lines</button></a>
       <a href="#" routerLink="/contactus"><button mat-button>Contact Us</button></a>
       <a href="#" routerLink="/aboutus"><button mat-button>About Us</button></a>
       <!-- <a href="#" routerLink="/news"><button mat-button>head</button></a> -->

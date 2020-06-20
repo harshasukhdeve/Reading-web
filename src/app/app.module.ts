@@ -16,18 +16,21 @@ import { FooterComponent } from './footer/footer.component';
 import { NovelsComponent } from './novels/novels.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactusComponent } from './contactus/contactus.component';
-import { NewsComponent } from './news/news.component';
 
 import { NgnewsModule } from 'angular-news-api';
 import { NewsApiKeyConfig } from 'angular-news-api';
 import { HttpClientModule } from "@angular/common/http";
-import{NewsService} from './news.service';
-import { MatIconModule } from '@angular/material/icon';
+
+import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule }from '@angular/material/list';
+
+import { from } from 'rxjs';
+import { NewsheadlineComponent } from './newsheadline/newsheadline.component';
+import { NewsheadlineapiService } from './newsheadline/newsheadlineapi.service';
 
 
-// const newsApiConfig: NewsApiKeyConfig = {
-//   key: '2b3d61e2bc0b4ba5bcd738c7fcdcef2d'
-// };
+
 
 
 @NgModule({
@@ -37,7 +40,7 @@ import { MatIconModule } from '@angular/material/icon';
     FooterComponent,
     NovelsComponent,
     ContactusComponent,
-    NewsComponent,
+    NewsheadlineComponent,
    
   ],
   imports: [
@@ -50,9 +53,14 @@ import { MatIconModule } from '@angular/material/icon';
     Ng2SearchPipeModule,
     FormsModule,
     HttpClientModule,
-    //NgnewsModule.forRoot(newsApiConfig),
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+  
   ],
-  providers: [SelectedItemService,NewsService],
+  providers: [SelectedItemService,NewsheadlineapiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
